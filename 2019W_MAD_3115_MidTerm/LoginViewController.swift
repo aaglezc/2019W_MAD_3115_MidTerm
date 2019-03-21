@@ -69,8 +69,8 @@ class LoginViewController: UIViewController {
                     RememberUD.removeObject(forKey: "pwd")
                 }
                 // Redirecting to the other ViewController
-                let sb = UIStoryboard(name: "Main", bundle: nil)
-                let StuHome = sb.instantiateViewController(withIdentifier: "StuHome") as! StudentEntryViewController
+               let sb = UIStoryboard(name: "Main", bundle: nil)
+                let StuHome = sb.instantiateViewController(withIdentifier: "SBStudentEntry") as! StudentEntryViewController
                 
                 self.present(StuHome, animated: true)
                 
